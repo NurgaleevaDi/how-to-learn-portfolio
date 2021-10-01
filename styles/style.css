@@ -21,6 +21,9 @@
   margin-bottom: 100px;
 }
 .logo{
+  z-index: 4;
+}
+.logo_place_header{
   height: 32px;
   width: 183px;
   position: absolute;
@@ -28,20 +31,24 @@
   left: 64px;
 }
 .header__title{
+  margin: 0;
   margin-left: 64px;
   width: 730px;
   align-self: center;
   line-height: 96px;
   font-size: 102px;
+  z-index: 3;
 }
 .header__subtitle{
-  position: absolute;
+  margin: 0;
   width: 388px;
+  position: absolute;
   bottom: 30px;
   left: 64px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 3;
 }
 .header__link{
   line-height: 25px;
@@ -55,6 +62,8 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
+  object-fit: cover;
+  object-position: right bottom;
   z-index: 2;
 }
 .header__square-pic{
@@ -79,7 +88,7 @@
   justify-content: space-between;
 }
 .two-columns__brif{
-  margin-top: 0px;
+  margin: 0;
   width: 175px;
   color: #2f80ed;
   line-height: 1.2;
@@ -135,15 +144,21 @@
   margin-top: 60px;
   width: 250px;
 }
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 .table__text {
   line-height: 1.2;
   font-size: 18px;
+  margin: 0;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 .feynman {
@@ -210,11 +225,14 @@
   margin-top: 80px;
 }
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  background-position: left top;
   position: absolute;
-  top: 0px;
-  right: -210px;
   width: 877px;
   height: 877px;
+  top: 0px;
+  right: -210px;
   z-index: 1;
 }
 .footer{
@@ -224,6 +242,7 @@
   min-height: 350px;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
   padding-bottom: 40px;
 }
 .footer__columns{
@@ -233,8 +252,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.footer__column_content_copyright{
+.footer__column{
   margin: 0;
+}
+.footer__column_content_copyright{
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
@@ -242,17 +263,16 @@
   align-items: stretch;
 }
 .logo_place_footer{
- width: 183px;
- height: 35px; 
-
+  width: 183px;
+  height: 35px; 
 }
 .footer__author{
-margin-bottom: 0px;
-line-height: 25px;
-font-size: 18px;
-font-weight: normal;
-padding-top: 18px;
-padding-bottom: 18px;
+  margin: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 .footer__column_content_info{
   display: flex;
@@ -278,7 +298,7 @@ padding-bottom: 18px;
   line-height: 30px;
   font-size: 18px;
 }
-.social-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
