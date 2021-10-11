@@ -1,0 +1,22 @@
+.header {
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    /* выше установили ограничения для секции */
+    display: flex;
+    position: relative;
+    background-color: #f2f2f2;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  .logo{
+    z-index: 4;
+  }
+  .logo_place_header{
+    height: 32px;
+    width: 183px;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+  }
