@@ -8,7 +8,7 @@
     top: 0px;
     right: -210px;
     z-index: 1;
-    animation: rotation 20s;
+   /* animation: rotation 20s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
   }

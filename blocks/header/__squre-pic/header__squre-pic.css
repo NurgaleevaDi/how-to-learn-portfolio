@@ -6,8 +6,4 @@
     position: absolute;
     right: 0;
     top: 64px;
-    animation: rotation 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    
   }
