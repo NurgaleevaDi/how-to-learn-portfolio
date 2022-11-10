@@ -8,5 +8,5 @@
 
 
 ### Ссылка на проект
-[Нажмите для перехода на проект](https://nurgaleevadi.github.io/how-to-learn-portfolio/index.html)
+[Нажмите для перехода на проект](https://nurgaleevadi.github.io/how-to-learn-portfolio/)
 
